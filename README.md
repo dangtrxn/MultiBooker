@@ -1,2 +1,2 @@
 # MultiBooker
-Multithreaded Project for Operating Systems Course
+A Multithreaded Project for Operating Systems Course
