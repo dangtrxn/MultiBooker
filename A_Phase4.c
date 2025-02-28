@@ -8,7 +8,7 @@
 #define TOTAL_TICKETS 500
 #define NUM_OF_CUSTOMERS 1000
 #define MAX_BOOKING 5
-#define TIMEOUT 2 //2.5 seconds
+#define TIMEOUT 2 //2 seconds
 
 //Global variable of total tickets available
 int available_tickets = TOTAL_TICKETS;
