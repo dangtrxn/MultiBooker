@@ -39,7 +39,7 @@ void *book(void* tid){
         ts.tv_sec += TIMEOUT;
         
         //Try to first acquire ticket_hold_mutex lock, second acquire payment_mutex lock,
-        //Wait for 2.5 seconds before "timing out" mechanism, release ticket_hold_mutex lock if waiting too long to acquire payment_mutex lock
+        //Wait for 2 seconds before "timing out" mechanism, release ticket_hold_mutex lock if waiting too long to acquire payment_mutex lock
         if(pthread_mutex_timedlock(&ticket_hold_mutex, &ts) == 0){
             if(pthread_mutex_timedlock(&payment_mutex, &ts) == 0){
                 lock_acquired = 1;
