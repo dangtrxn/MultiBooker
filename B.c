@@ -8,6 +8,7 @@
 
 int main() {
     //File descriptors for the pipe
+    //fd[0] = read end, fd[1] = write end
     int fd[2];
     pid_t pid;
     
